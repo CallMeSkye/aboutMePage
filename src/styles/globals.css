@@ -105,3 +105,146 @@ a {
     color-scheme: dark;
   }
 }
+
+#container01 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.1015625%200%200%200%200%200%200.09375%200%200%200%200%200%200.12890625%200%200%200%200%200%200.56640625%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E), linear-gradient(265deg, #3A3647 0%, #303342 100%);
+  background-size: 512px, cover;
+  background-position: center, 0% 0%;
+  background-repeat: repeat, repeat;
+  box-shadow: 0rem 4.25rem 6.75rem 1.125rem rgba(48,51,66,0.49);
+  border-radius: 2rem;
+}
+
+#main {
+  --alignment: var(--site-language-alignment);
+  --flex-alignment: var(--site-language-flex-alignment);
+  --indent-left: var(--site-language-indent-left);
+  --indent-right: var(--site-language-indent-right);
+  --border-radius-tl: 0;
+  --border-radius-tr: 0;
+  --border-radius-br: 0;
+  --border-radius-bl: 0;
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  max-width: 100%;
+  position: relative;
+  text-align: var(--alignment);
+  z-index: 1;
+}
+
+#main > .inner {
+  --padding-horizontal: 3rem;
+  --padding-vertical: 3rem;
+  --spacing: 1.5rem;
+  --width: 35rem;
+  border-radius: var(--border-radius-tl) var(--border-radius-tr) var(--border-radius-br) var(--border-radius-bl);
+  max-width: 100%;
+  position: relative;
+  width: var(--width);
+  z-index: 1;
+  padding: var(--padding-vertical) var(--padding-horizontal);
+}
+
+#container01 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.1015625%200%200%200%200%200%200.09375%200%200%200%200%200%200.12890625%200%200%200%200%200%200.56640625%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E), linear-gradient(265deg, #3A3647 0%, #303342 100%);
+  background-size: 512px, cover;
+  background-position: center, 0% 0%;
+  background-repeat: repeat, repeat;
+  box-shadow: 0rem 4.25rem 6.75rem 1.125rem rgba(48,51,66,0.49);
+  border-radius: 2rem;
+}
+.container {
+  position: relative;
+}
+
+#container01 > .wrapper {
+  max-width: var(--width);
+  width: 100%;
+}
+
+.container > .wrapper {
+  vertical-align: top;
+  position: relative;
+  max-width: 100%;
+  border-radius: inherit;
+}
+
+.centered {
+  text-align: center;
+  font-size: 20px;
+}
+
+.centeredHead {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+hr {
+    border: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#buttons01 {
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  cursor: default;
+  display: flex;
+  justify-content: var(--flex-alignment);
+  letter-spacing: 0;
+  padding: 0;
+}
+
+#buttons01 .button {
+  color: #FFFFFF;
+  border: solid 2px #896BFF;
+}
+
+#buttons01 li a {
+  display: inline-flex;
+  width: auto;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  padding: 0 1.75rem;
+  vertical-align: middle;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 0.75rem;
+  transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: color 0.25s ease;
+}
+
+.buttons li a {
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.n01 {border: solid 2px #896BFF;}
